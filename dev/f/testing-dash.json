@@ -35,7 +35,7 @@
         "title": "Source (GitHub)",
         "tooltip": "View source file in repository",
         "type": "link",
-        "url": "https://github.com/Clarity-89/git-sync-test/blob/main/dev/f/testing-db-test.json"
+        "url": "https://github.com/Clarity-89/git-sync-test/blob/main/dev/f/testing-dash.json"
       }
     ],
     "panels": [
@@ -151,7 +151,7 @@
     },
     "timepicker": {},
     "timezone": "browser",
-    "title": "testing-dashboard",
+    "title": "testing-dashboardz",
     "weekStart": ""
   }
 }
