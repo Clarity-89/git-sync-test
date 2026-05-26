@@ -1,0 +1,108 @@
+{
+  "apiVersion": "dashboard.grafana.app/v1",
+  "kind": "Dashboard",
+  "metadata": {
+    "name": "dafn7j3yqw51q8d"
+  },
+  "spec": {
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations \u0026 Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "panels": [
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "cf1736js1l2bke"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "drawStyle": "line",
+              "fillOpacity": 10
+            },
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 100
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 24,
+          "x": 0,
+          "y": 0
+        },
+        "id": 1,
+        "targets": [
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "cf1736js1l2bke"
+            },
+            "expr": "rate(node_cpu_seconds_total{mode=\"user\"}[5m])",
+            "refId": "A"
+          }
+        ],
+        "title": "V1 Provisioned - Rate Limit $VAL_LIMIT",
+        "type": "timeseries"
+      }
+    ],
+    "schemaVersion": 40,
+    "tags": [
+      "test-v1-provisioned"
+    ],
+    "templating": {
+      "list": [
+        {
+          "current": {
+            "text": "100",
+            "value": "100"
+          },
+          "hide": 0,
+          "label": "Rate Limit",
+          "name": "VAL_LIMIT",
+          "options": [
+            {
+              "text": "100",
+              "value": "100"
+            }
+          ],
+          "query": "100",
+          "type": "constant"
+        }
+      ]
+    },
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "title": "V1 Provisioned Import Test"
+  }
+}
