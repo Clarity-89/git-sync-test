@@ -1,79 +1,204 @@
 {
-  "apiVersion": "dashboard.grafana.app/v1",
+  "apiVersion": "dashboard.grafana.app/v2",
   "kind": "Dashboard",
   "metadata": {
     "name": "dfflplrx5svoxsa"
   },
   "spec": {
-    "editable": false,
-    "links": [],
-    "panels": [
+    "annotations": [
       {
-        "datasource": null,
-        "gridPos": {
-          "h": 3,
-          "w": 24,
-          "x": 0,
-          "y": 0
-        },
-        "id": 1,
-        "title": "",
-        "transparent": false,
-        "type": "welcome"
-      },
-      {
-        "datasource": null,
-        "folderId": 0,
-        "gridPos": {
-          "h": 15,
-          "w": 12,
-          "x": 0,
-          "y": 4
-        },
-        "id": 3,
-        "links": [],
-        "options": {
-          "folderId": 0,
-          "maxItems": 30,
-          "query": "",
-          "showHeadings": true,
-          "showRecentlyViewed": true,
-          "showSearch": false,
-          "showStarred": true,
-          "tags": []
-        },
-        "title": "Dashboards",
-        "type": "dashlist"
-      },
-      {
-        "datasource": null,
-        "gridPos": {
-          "h": 15,
-          "w": 12,
-          "x": 12,
-          "y": 4
-        },
-        "id": 4,
-        "links": [],
-        "options": {
-          "feedUrl": "https://grafana.com/blog/news.xml"
-        },
-        "title": "Latest from the blog",
-        "type": "news"
+        "kind": "AnnotationQuery",
+        "spec": {
+          "builtIn": true,
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations \u0026 Alerts",
+          "query": {
+            "datasource": {
+              "name": "-- Grafana --"
+            },
+            "group": "grafana",
+            "kind": "DataQuery",
+            "spec": {},
+            "version": "v0"
+          }
+        }
       }
     ],
-    "schemaVersion": 22,
+    "cursorSync": "Off",
+    "description": "",
+    "editable": true,
+    "elements": {
+      "panel-1": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [],
+              "queryOptions": {},
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 1,
+          "links": [],
+          "title": "",
+          "vizConfig": {
+            "group": "welcome",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {},
+                "overrides": []
+              },
+              "options": {}
+            },
+            "version": "13.1.0-local"
+          }
+        }
+      },
+      "panel-3": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [],
+              "queryOptions": {},
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 3,
+          "links": [],
+          "title": "Dashboards",
+          "vizConfig": {
+            "group": "dashlist",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {},
+                "overrides": []
+              },
+              "options": {
+                "folderUID": "",
+                "includeVars": false,
+                "keepTime": false,
+                "maxItems": 30,
+                "query": "",
+                "showFolderNames": true,
+                "showHeadings": true,
+                "showRecentlyViewed": true,
+                "showSearch": false,
+                "showStarred": true,
+                "tags": []
+              }
+            },
+            "version": "13.1.0-local"
+          }
+        }
+      },
+      "panel-4": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [],
+              "queryOptions": {},
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 4,
+          "links": [],
+          "title": "Latest from the blog",
+          "vizConfig": {
+            "group": "news",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {},
+                "overrides": []
+              },
+              "options": {
+                "feedUrl": "https://grafana.com/blog/news.xml",
+                "showImage": true
+              }
+            },
+            "version": "13.1.0-local"
+          }
+        }
+      }
+    },
+    "layout": {
+      "kind": "GridLayout",
+      "spec": {
+        "items": [
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-1"
+              },
+              "height": 3,
+              "width": 24,
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-3"
+              },
+              "height": 15,
+              "width": 12,
+              "x": 0,
+              "y": 3
+            }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-4"
+              },
+              "height": 15,
+              "width": 12,
+              "x": 12,
+              "y": 3
+            }
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/Clarity-89/git-sync-test/blob/main/grafana/home.json"
+      }
+    ],
+    "liveNow": false,
+    "preload": false,
     "tags": [],
-    "templating": {
-      "list": []
-    },
-    "time": {
-      "from": "now-6h",
-      "to": "now"
-    },
-    "timepicker": {
-      "hidden": true,
-      "refresh_intervals": [
+    "timeSettings": {
+      "autoRefresh": "",
+      "autoRefreshIntervals": [
         "5s",
         "10s",
         "30s",
@@ -85,9 +210,13 @@
         "2h",
         "1d"
       ],
-      "type": "timepicker"
+      "fiscalYearStartMonth": 0,
+      "from": "now-6h",
+      "hideTimepicker": true,
+      "timezone": "browser",
+      "to": "now"
     },
-    "timezone": "browser",
-    "title": "Home"
+    "title": "Home",
+    "variables": []
   }
 }
