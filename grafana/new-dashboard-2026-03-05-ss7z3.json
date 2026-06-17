@@ -1,5 +1,5 @@
 {
-  "apiVersion": "dashboard.grafana.app/v1beta1",
+  "apiVersion": "dashboard.grafana.app/v1",
   "kind": "Dashboard",
   "metadata": {
     "name": "dfff2wvnd17itcd"
@@ -101,16 +101,21 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 8,
-          "w": 12,
+          "h": 10,
+          "w": 20,
           "x": 0,
           "y": 0
         },
         "id": 1,
         "options": {
+          "annotations": {
+            "clustering": -1,
+            "multiLane": false
+          },
           "legend": {
             "calcs": [],
             "displayMode": "list",
+            "enableFacetedFilter": false,
             "placement": "bottom",
             "showLegend": true
           },
@@ -120,7 +125,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "13.0.0-local",
+        "pluginVersion": "13.1.0-local",
         "targets": [
           {
             "datasource": {
