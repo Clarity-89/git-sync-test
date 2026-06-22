@@ -27,7 +27,7 @@
       }
     ],
     "cursorSync": "Off",
-    "description": "",
+    "description": "Admin PR test",
     "editable": true,
     "elements": {
       "panel-1": {
@@ -94,7 +94,20 @@
         ]
       }
     },
-    "links": [],
+    "links": [
+      {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/Clarity-89/git-sync-test/blob/agent-test/dev/ops-test/team-alpha/dashboard-alpha1.json"
+      }
+    ],
     "liveNow": false,
     "preferences": {
       "layout": {
