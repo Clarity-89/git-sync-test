@@ -1,0 +1,10 @@
+{
+  "kind": "Folder",
+  "apiVersion": "folder.grafana.app/v1",
+  "metadata": {
+    "name": "bfs63aze21fr4e"
+  },
+  "spec": {
+    "title": "alpha-services"
+  }
+}
