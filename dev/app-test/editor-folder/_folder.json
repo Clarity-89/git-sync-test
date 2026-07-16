@@ -1,0 +1,10 @@
+{
+  "kind": "Folder",
+  "apiVersion": "folder.grafana.app/v1",
+  "metadata": {
+    "name": "dfs9w3t4kusjka"
+  },
+  "spec": {
+    "title": "editor-folder"
+  }
+}
