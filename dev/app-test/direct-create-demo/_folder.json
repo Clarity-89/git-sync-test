@@ -1,0 +1,10 @@
+{
+  "kind": "Folder",
+  "apiVersion": "folder.grafana.app/v1",
+  "metadata": {
+    "name": "afsvnthu82a68c"
+  },
+  "spec": {
+    "title": "direct-create-demo"
+  }
+}
