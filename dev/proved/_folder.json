@@ -1,0 +1,10 @@
+{
+  "kind": "Folder",
+  "apiVersion": "folder.grafana.app/v1",
+  "metadata": {
+    "name": "dg0a7obel1c00b"
+  },
+  "spec": {
+    "title": "proved"
+  }
+}
