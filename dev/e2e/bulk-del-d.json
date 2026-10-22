@@ -1,0 +1,15 @@
+{
+  "apiVersion": "dashboard.grafana.app/v1beta1",
+  "kind": "Dashboard",
+  "metadata": {
+    "name": "dbg1yx61omww00f"
+  },
+  "spec": {
+    "panels": [],
+    "schemaVersion": 41,
+    "tags": [
+      "e2e"
+    ],
+    "title": "e2e bulk-del-d"
+  }
+}
